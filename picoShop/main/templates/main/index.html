@@ -1,0 +1,85 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<div class="container">
+        <div class="row" style="margin-bottom: 1px;">
+            <div class="col-md-12" style="margin-bottom: 0px;">
+                <h1><span style="color: rgb(255, 255, 255);">Ваши заказы</span></h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-pay rounded-1" style="margin-top: 14px;padding-top: 42px;margin-bottom: 30px;padding-bottom: 24px;">
+            <div class="col-md-2 rounded-1">
+                <small class="d-block mb-1" style="padding-top: 6px;">
+                    <span style="color: rgb(255, 255, 255);">Номер заказа:</span>
+                </small>
+                <strong class="d-block mb-1">
+                    <span style="color: rgb(255, 255, 255);">{{ order.order_number }}</span>
+                </strong>
+            </div>
+            <div class="col-md-2 rounded-1">
+                <small class="d-block mb-1" style="padding-top: 6px;">
+                    <span style="color: rgb(255, 255, 255);">Дата заказа:</span>
+                </small>
+                <strong class="d-block mb-1">
+                    <span style="color: rgb(255, 255, 255);">{{ order.order_date }}</span>
+                </strong>
+            </div>
+            <div class="col-md-3 rounded-1">
+                <small class="d-block mb-1" style="padding-top: 6px;">
+                    <span style="color: rgb(255, 255, 255);">Название игры:</span>
+                </small>
+                <strong class="d-block mb-1">
+                    <span style="color: rgb(255, 255, 255);">{{ order.game_name }}</span>
+                </strong>
+            </div>
+            <div class="col-md-2 rounded-1">
+                <small class="d-block mb-1" style="padding-top: 6px;">
+                    <span style="color: rgb(255, 255, 255);">Статус оплаты:</span>
+                </small>
+                <strong class="d-block mb-1">
+                    <span style="color: rgb(0, 212, 25);">Оплачен</span>
+                </strong>
+            </div>
+            <div class="col-md-2 rounded-1">
+                <small class="d-block mb-1" style="padding-top: 6px;">
+                    <span style="color: rgb(255, 255, 255);">Статус заказа:</span>
+                </small>
+                <strong class="d-block mb-1">
+                    <span style="color: rgb(255, 255, 255);padding-bottom: 0px;">{{ order.status }}</span>
+                </strong>
+            </div>
+            <div class="col">
+                <div class="row text-center justify-content-center buttom-main-block">
+                    <div class="col row-pay row-review rounded-1">
+                        <strong class="d-block mb-2 main-rev-text">
+                            <span style="font-weight: normal;color: rgb(255, 255, 255);">
+                                <strong>ЭТО БЫЛ СПИСОК ВАШИХ 5 ПОСЛЕДНИХ ЗАКАЗОВ</strong>
+                            </span>
+                        </strong>
+                        <small class="d-block mb-1">
+                        <span style="color: rgb(255, 255, 255);">
+                            <strong>Мы будем вам очень благодарны за отзыв на Digiseller,это очень поможет нашему сервису :)</strong>
+                        </span>
+                    </small>
+                        <button class="btn btn-primary btn-review" type="reset">
+                            <strong>Оставить отзыв на Digiseller</strong>
+                        </button>
+                    </div>
+                    <div class="col row-pay row-review rounded-1">
+                        <strong class="d-block mb-2 main-rev-text">
+                            <span style="font-weight: normal;color: rgb(255, 255, 255);">Время работы поддержки: Ежедневно 11:00 - 3:00 МСК </span>
+                        </strong>
+                        <small class="d-block mb-1">
+                            <span style="color: rgb(255, 255, 255);">
+                                <span style="background-color: rgba(255, 255, 255, 0);">Если у вас возникли вопросы, обращайтесь в поддержку через виджет в правом нижнем углу сайта. Мы обязательно вам ответим в рабочие часы и разберемся с проблемой.
+                                </span>
+                            </span>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

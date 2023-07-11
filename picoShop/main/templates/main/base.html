@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>picoProject</title>
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/css/css/styles.css' %}">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg background-color: #110e1c; headerThanks">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'assets/img/logo2.svg' %}" alt="Logo">
+            </a>
+            <button data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="{% static 'assets/img/button-menu.png' %}" alt="Toggle Navigation">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                <div class="social-media">
+                    <a href="#" class="social-media__link">
+                        <img src="{% static 'assets/img/instagram.svg' %}" width="28">
+                    </a>
+                    <a href="#" class="social-media__link">
+                        <img src="{% static 'assets/img/telegram_logo_icon_144811.svg' %}" width="28" height="28">
+                    </a>
+                    <a href="#" class="social-media__link">
+                        <img src="{% static 'assets/img/vk.png' %}" height="32">
+                    </a>
+                </div>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+        <footer class="text-center">
+        <div class="container text-muted py-4 py-lg-5">
+            <ul class="list-inline">
+                <li class="list-inline-item list-inline-item me-4">
+                    <a class="link-secondary" href="#">Отзывы</a>
+                </li>
+                <li class="list-inline-item list-inline-item me-4">
+                    <a class="link-secondary" href="#">FAQ</a>
+                </li>
+                <li class="list-inline-item list-inline-item">
+                    <a class="link-secondary" href="#">Политика конфиденциальности&nbsp;</a>
+                </li>
+            </ul>
+            <ul class="list-inline">
+                <li class="list-inline-item list-inline-item me-4">
+                    <img src="{% static 'assets/img/vk.png' %}" height="35px">
+                </li>
+                <li class="list-inline-item list-inline-item me-4">
+                    <img src="{% static 'assets/img/telegram_logo_icon_144811.svg' %}" height="30px">
+                </li>
+                <li class="list-inline-item list-inline-item">
+                    <img src="{% static 'assets/img/instagram.svg' %}" height="30px">
+                </li>
+            </ul>
+            <p class="mb-0">Copyright © 2023 Brand</p>
+        </div>
+    </footer>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/js/bootstrap.min.js' %}"></script>
+</body>
+</html>
